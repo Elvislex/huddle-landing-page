@@ -1,0 +1,262 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(208, 11%, 55%);
+}
+
+/*------header-------*/
+
+header {
+  background: url(images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.community {
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem;
+}
+
+.toplogo {
+  height: 30px;
+  width: 170px;
+}
+
+/*------btn section-----------*/
+.btn {
+  border-radius: 30px;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 700;
+}
+
+.sec {
+  margin: 1.5rem 0;
+  padding: 0.75rem 2.5rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+}
+.sec:hover{
+  background-color: hsl(322, 100%, 66%,.6);
+}
+
+.topbtn:hover{
+  background-color: rgba(0, 0, 0, .3) ;
+}
+.topbtn p{
+  color: white;
+}
+.last {
+  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+/*------second-section------*/
+.second {
+  margin: 3.5rem 1.2rem;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+
+/*-----third-section----*/
+
+.third {
+  margin: 3.5rem 1.2rem;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+/*-----fourth-section----*/
+.fourth {
+  margin-bottom: 0rem;
+}
+
+/*------ready-----*/
+.ready {
+  background-color: white;
+  height: 40%;
+  margin: 3.5rem 1.2rem;
+  margin-top: 0;
+  border-radius: 20px;
+  padding-top: 2rem;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  position: relative;
+  top: 8rem;
+}
+
+/*----footer----*/
+footer {
+  background-color: hsl(192, 100%, 9%);
+  text-align: left;
+  padding-bottom: 0.1rem;
+}
+
+footer p {
+  color: hsl(193, 100%, 96%, 0.9);
+}
+
+.footer-sub-area {
+  padding-top: 6rem;
+  margin: auto 1.2rem;
+}
+
+.bone {
+  display: flex;
+  gap: 2rem;
+}
+
+.loc {
+  margin-top: 1.5rem;
+}
+
+.phone {
+  margin-top: 1.2rem;
+}
+
+.email {
+  margin-top: 1rem;
+}
+.icon {
+  width: auto;
+  height: 20px;
+}
+.media {
+  text-align: center;
+}
+
+.social {
+  margin: auto 1rem;
+  border: solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.social:hover{
+  background-color:  hsl(322, 100%, 66%);
+  border-color:  hsl(322, 100%, 66%);
+}
+
+/*----@media------*/
+
+@media screen and (min-width: 1441px) {
+  body {
+    line-height: 1.5;
+  }
+  header {
+    background: url(images/bg-hero-desktop.svg);
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.55rem 3rem;
+  }
+
+  .community {
+    display: flex;
+    text-align: left;
+    gap: 3rem;
+    margin: auto;
+    max-width: 80%;
+  }
+
+  .build {
+    max-width: 40%;
+    margin-top: 4rem;
+  }
+  .topimg {
+    max-width: 80%;
+  }
+
+  .btn {
+    padding: 1rem 2.5rem;
+  }
+  .topbtn {
+    padding: 1rem 5rem;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    text-align: left;
+    padding-left: 6rem;
+  }
+
+  .third {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    gap: 5rem;
+    margin: auto;
+    text-align: left;
+    padding-left: 6rem;
+    margin-top: 2rem;
+  }
+  .ready {
+    max-width: 30%;
+    position: relative;
+    left: 32rem;
+  }
+
+  .footer-sub-area {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  footer p{
+    font-size: .9rem;
+  }
+
+  .huddle {
+    max-width: 28%;
+  }
+  .social {
+    margin: auto;
+  }
+  .attribution {
+    text-align: right;
+    margin-right: 3rem;
+  }
+}
